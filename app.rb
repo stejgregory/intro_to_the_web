@@ -18,7 +18,12 @@ get '/random-cat' do
   erb :index
 end
 
-get '/named-cat' do
+get '/cat-naming' do
+  erb :index2
+end
+
+
+post '/named-cat' do
   p params
   @names = params[:namey]
   erb :index
